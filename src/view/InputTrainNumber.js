@@ -32,7 +32,7 @@ export default function InputTrainNumber({
             handleInputSeat(event);
           }}
         ></input>
-        <button onClick={bookSeats}>Book seats</button>
+        <button onClick={bookSeats} disabled={showError}>Book seats</button>
         <button onClick={resetSeat}>Reset seats</button>
         {showError ? <p style={{ color: "red" }}>{errorMsg}</p> : null}
       </div>
